@@ -13,20 +13,34 @@
         <div class="">
             <h1 class="">Tic Tac Toe</h1>
         </div>
+        <div class="row">
+            <div class="span3">
+                <label for="width">Width: </label>
+                <input id="width" type="number" value="3" min="3">
+            </div>
+            <div class="span3">
+                <label for="height">Height:</label>
+                <input id="height" type="number" value="3" min="3">
+            </div>
+            <div class="span3">
+                <label for="sameTileCondition">Win condition:</label>
+                <input id="sameTileCondition" type="number" value="3" min="3">
+            </div>
+        </div>
         <div class="input-prepend input-append">
             <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
         </div>
         <div class="input-prepend input-append">
             <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
         </div>
-        <table class="" id="game">
+        <table class="">
+            <tbody id="game"></tbody>
         </table>
         <div class="clr">&nbsp;</div>
         <div class=""><a href="#" id="reset" class="btn-success btn span3" style="margin: 0">Restart</a></div>
     </div>
 </div>
 <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
-<script src="config.js"></script>
 <script src="js/index.js"></script>
 </body>
 
